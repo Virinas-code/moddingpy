@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "moddingpy"
+description = "🔩 A simple modding library for Python"
+version = "0.1.0"
+
+keywords = ["modding"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+]
+
+readme = "README.md"
+include = ["LICENSE", "README.md"]
+homepage = "https://github.com/Virinas-code/moddingpy"
+repository = "https://github.com/Virinas-code/moddingpy/tree/master"
+documentation = "https://github.com/Virinas-code/moddingpy/wiki"
+
+authors = ["Virinas-code <alexcode228@gmail.com>"]
+license = "LGPL-3.0"
+
+packages = [{ include = "moddingpy", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
