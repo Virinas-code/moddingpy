@@ -1,2 +1,2 @@
 # moddingpy
- 🔩 A simple modding library for Python
+## 🔩 A simple modding library for Python
