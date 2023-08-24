@@ -42,6 +42,8 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install --upgrade pip
+          pip install poetry
           poetry install --with docs
 
       - name: Build with Sphinx
