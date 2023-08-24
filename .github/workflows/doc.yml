@@ -44,7 +44,8 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install poetry
-          poetry install --with docs
+          poetry config virtualenvs.create false
+          poetry install --with docs --no-interaction
 
       - name: Build with Sphinx
         run: |
