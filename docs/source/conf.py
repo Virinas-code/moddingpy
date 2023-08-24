@@ -4,6 +4,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 import os
 import sys
+from typing import Any
 
 print(os.getcwd())
 sys.path.append(os.path.abspath("../../src"))
@@ -29,3 +30,12 @@ exclude_patterns = []
 
 html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static"]
+
+# -- User settings -----------------------------------------------------------
+autodoc_default_options: dict[str, Any] = {
+    "members": True,
+    "undoc-members": True,
+    "private-members": True,
+    "special-members": True,
+    "exclude-members": "__dict__, __module__, __weakref__",
+}

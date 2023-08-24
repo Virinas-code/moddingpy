@@ -69,7 +69,7 @@ Table of contents
    :caption: Contents:
 
    developers
-   API Reference <reference>
+   API Reference <reference/reference>
 
 Indices and tables
 ------------------
